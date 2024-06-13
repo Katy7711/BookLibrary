@@ -1,0 +1,6 @@
+databaseChangeLog:
+  - include:
+      file: liquibase/scripts/books.sql
+
+  - include:
+      file: liquibase/scripts/authors.sql
