@@ -3,11 +3,12 @@ package com.example.booklibrary.service;
 import com.example.booklibrary.dto.BookDto;
 import com.example.booklibrary.entity.Book;
 import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 
 public interface BookService {
 
   Book createBook (BookDto book);
-  Page<Book> getAllBooks (int page, int pageSize, boolean sort);
+  Page<Book> getAllBooks (Pageable pageable);
 
   Book getBookById(long id);
 
